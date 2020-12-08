@@ -1,0 +1,347 @@
+body{
+    height: 100vh !important;
+    overflow: hidden;
+    background-color: #464646;
+}
+html{
+    overflow: hidden;
+}
+.table {
+    position: fixed;
+    top: 240px;
+    z-index: 1;
+}
+.w-40{
+    width: 40% !important;
+}
+.table:hover{
+    transform: scale(1.01);
+}
+.sofa {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    width: 45% !important;
+    z-index: 1;
+}
+.sofa:hover{
+    transform: scale(1.01);
+}
+
+.tv {
+    position: fixed;
+    top: 10px;
+    width: 25%;
+    left: 30px;
+}
+.tv:hover{
+    transform: scale(1.01);
+}
+.door1 {
+	position: absolute;
+	top: 82px;
+	left: 32%;
+    width: 7%;
+    transform: perspective(300px) rotateY(0deg);
+    transition: all 1s linear;
+    transform-origin: center left;
+}
+.door2 {
+    position: absolute;
+    top: 80px;
+    left: 44%;
+    width: 6.5%;
+    transform: perspective(300px) rotateY(0deg);
+    transition: all 1s linear;
+    transform-origin: center left;
+}
+.door3 {
+    position: absolute;
+    top: 90px;
+    left: 62%;
+    width: 6%;
+    transform: perspective(300px) rotateY(-16deg);
+    transition: all 1s linear;
+    transform-origin: center left;
+}
+.door1:hover{
+    /* animation: open 1s linear; */
+    transform: perspective(300px) rotateY(-100deg);
+}
+.door2:hover{
+    /* animation: open 1s linear; */
+    transform: perspective(300px) rotateY(-100deg);
+}
+.door3:hover{
+    /* animation: open 1s linear; */
+    transform: perspective(300px) rotateY(-100deg);
+}
+
+/* @keyframes open{
+    0%{
+        transform: perspective(300px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(300px) rotateY(-80deg);
+    }
+} */
+
+@media screen and (max-width:1300px){
+    .door1 {
+        position: absolute;
+        top: 75px;
+        left: 32%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 74px;
+        left: 44%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .table {
+        position: fixed;
+        top: 200px;
+        z-index: 1;
+    }
+    .door1 {
+        position: absolute;
+        top: 67px;
+        left: 32%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 70px;
+        left: 44%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+    .door3 {
+        position: absolute;
+        top: 74px;
+        left: 62%;
+        width: 6%;
+        transform: perspective(300px) rotateY(-20deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
+
+@media screen and (max-width:992px){
+    .table {
+        position: fixed;
+        top: 170px;
+        z-index: 1;
+    }
+    .sofa {
+        position: fixed;
+        right: 0;
+        top: 155px;
+        width: 45% !important;
+    }
+    .door1 {
+        position: absolute;
+        top: 56px;
+        left: 32%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 57px;
+        left: 44%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+    .door3 {
+        position: absolute;
+        top: 63px;
+        left: 62%;
+        width: 6%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
+@media screen and (max-width:850px){
+    .door1 {
+        position: absolute;
+        top: 50px;
+        left: 32%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 49px;
+        left: 44%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+    .door3 {
+        position: absolute;
+        top: 55px;
+        left: 62%;
+        width: 6%;
+        transform: perspective(300px) rotateY(-26deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
+@media screen and (max-width:768px){
+    .table {
+        position: fixed;
+        top: 130px;
+        z-index: 1;
+    }
+    .sofa {
+        position: fixed;
+        right: 0;
+        top: 120px;
+        width: 45% !important;
+    }
+    .door1 {
+        position: absolute;
+        top: 45px;
+        left: 32%;
+        width: 7%;
+    }
+}
+@media screen and (max-width:655px){
+    .door1 {
+        position: absolute;
+        top: 38px;
+        left: 32%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 38px;
+        left: 44%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+    .door3 {
+        position: absolute;
+        top: 41px;
+        left: 62%;
+        width: 6%;
+        transform: perspective(300px) rotateY(-26deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
+
+@media screen and (max-width:576px){
+    .table {
+        position: fixed;
+        top: 95px;
+        z-index: 1;
+    }
+    .sofa {
+        position: fixed;
+        right: 0;
+        top: 90px;
+        width: 45% !important;
+    }
+    .door1 {
+        position: absolute;
+        top: 32px;
+        left: 32%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 32px;
+        left: 44%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+    .door3 {
+        position: absolute;
+        top: 33px;
+        left: 62%;
+        width: 6%;
+        transform: perspective(300px) rotateY(-32deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
+@media screen and (max-width:450px){
+    .door1 {
+        position: absolute;
+        top: 26px;
+        left: 32%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 27px;
+        left: 44%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+    .door3 {
+        position: absolute;
+        top: 29px;
+        left: 62%;
+        width: 6%;
+        transform: perspective(300px) rotateY(-32deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
+@media screen and (max-width:380px){
+    .table {
+        position: fixed;
+        top: 65px;
+        z-index: 1;
+    }
+    .sofa {
+        position: fixed;
+        right: 0;
+        top: 70px;
+        width: 45% !important;
+    }
+    .door1 {
+        position: absolute;
+        top: 23px;
+        left: 35%;
+        width: 7%;
+    }
+    .door2 {
+        position: absolute;
+        top: 22px;
+        left: 48%;
+        width: 6.5%;
+        transform: perspective(300px) rotateY(0deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+    .door3 {
+        position: absolute;
+        top: 23px;
+        left: 62%;
+        width: 6%;
+        transform: perspective(300px) rotateY(-32deg);
+        transition: all 1s linear;
+        transform-origin: center left;
+    }
+}
